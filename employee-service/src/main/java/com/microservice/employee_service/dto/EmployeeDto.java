@@ -1,5 +1,6 @@
 package com.microservice.employee_service.dto;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,4 +15,9 @@ public class EmployeeDto {
     private String firstName ;
     private String lastName ;
     private String email ;
+    private String departmentCode ;
+
+    public Long getId(){
+        return  this.id;
+    }
 }
